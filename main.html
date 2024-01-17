@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Security-Policy" content="script-src 'self' http://localhost/* 'unsafe-inline' 'unsafe-eval'" />
+    <link rel="stylesheet" href="styles.css">
+
+    <title>Chrome Extension For differently Abled</title>
+</head>
+<body style="min-width:300px;">
+
+<div align="center">
+
+  <div id="mainDiv">
+
+    <h1 id="h1">Chrome Extension for differently abled users</h1>
+    <img src="icon.png" alt="icon" width="150px" height="150px">
+    <h4 id="para">An extension to ease the access and navigation of web content for the differently abled users.</p> <br><br>
+    
+    <button id="next">Next -></button> <br><br> <hr>
+
+    <h2><u>Keyboard Shortkeys</u></h2> <br>
+
+    <table>
+      
+      <tr>
+        <th>Key</th>
+        <th>Function</th>
+      </tr>
+
+      <tr> <td>-></td>  <td>Navigate Forward</td> </tr>
+      <tr> <td><-</td>  <td>Navigate Backward</td> </tr>
+      <tr> <td>x</td> <td>Close</td> </tr>
+    
+      <tr> <td>c</td> <td>Take Cambridge Test</td> </tr>
+      <tr> <td>s</td> <td>Build Solution</td> </tr>
+      <tr> <td>w</td> <td>Voice Assist</td> </tr>
+      <tr> <td>h</td> <td>Help</td> </tr>
+      
+    </table>
+
+  </div>
+
+  <div id="qsre" align="center">
+
+    <h1>Problem Identification</h1> 
+
+    <h3>Take a quick test to find your problem!!</h3> <br>
+    
+    
+    <button id="test2">Cambridge Color </button> <br><br>
+
+    <h3>Know your problem already?</h3> <br>
+
+    <button id="gotoSol">Go to Solution</button> <br>
+  
+  </div>
+
+  <div id="choose">
+
+    <h2 id="soln">Choose your problem</h2> 
+        
+        <label for="colorpick1">Red - Green</label>
+        <input type="radio" id="colorpick1" name="colorpick" value="red-green"> <br>
+        
+        <label for="colorpick2">Blue - Yellow</label>
+        <input type="radio" id="colorpick2" name="colorpick" value="blue-yellow"> <br>
+        
+        <label for="colorpick3">Complete</label>
+        <input type="radio" id="colorpick3" name="colorpick" value="Complete"> <br>
+
+    <button id="finish" > Solve / Change </button>
+  
+  </div>
+
+
+
+  <div id="cct">
+    
+    <h2>Cambridge Color Test</h2>
+    
+    <img id="cctId" width="150px" height="150px"> <br><br>
+
+    <select name="cctVs" id="cctVs">
+
+      <option value="visible">Visible</option>
+      <option value="invisible">Not Visible</option>
+    
+    </select> <br><br>
+
+    <button id="cctNext">Next</button>
+  
+  </div>
+
+  <div id="bldRes1">
+
+    <h2 id="bldRes"></h2> <br><br>
+  
+    <button class="back">Back</button>
+
+  </div>
+
+</div>
+
+<div id="spch" class="voice_to_text"> 
+  
+  <br><br>
+  <hr>
+
+  <h1>Voice Assist</h1> <br>
+
+  <textarea name="convert_text" id="convert_text" cols="30" rows="2"></textarea> <br><br>
+  
+  <button id="click_to_record">speak</button> 
+  <button id="speech_help">help</button>
+
+  <button id="search_for"></button>
+
+</div>
+
+</body>
+<script src="jquery-3.6.1.min.js"></script>
+<script src="background.js"></script>
+
+<script src="cct.js"></script>
+<script src="speech.js"></script>
+<script src="keyboard.js"></script>
+</html>

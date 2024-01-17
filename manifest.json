@@ -1,0 +1,28 @@
+{
+    "manifest_version": 3,
+    "name": "Hue Assist",
+    "version": "1.0.0",
+    "description":"An extension to aid COlor Blind and partially blind people use the Web",
+    "icons":{
+        "16":"icon.png",
+        "48":"icon.png",
+        "128":"icon.png"
+    },
+    "action": {
+        "default_popup":"main.html"
+    },
+
+    "permissions": [
+        "tabs",
+        "cookies",
+        "storage",
+        "scripting",
+        "activeTab",
+        "tts"
+        ],
+    
+    "background": {
+            "service_worker": "bk.js",
+            "type": "module"
+    }
+}
